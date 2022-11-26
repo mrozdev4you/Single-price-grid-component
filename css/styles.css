@@ -223,12 +223,16 @@ footer {
 
 @media screen and (min-width: 606px) and (max-width: 1550px) {
   
+  .single-price-grid {
+    margin: 1rem;
+  }
+
   /** Footer Styling **/
 
   footer {
     position: absolute;
     left: 0;
-    bottom: -15rem;
+    bottom: 0.5rem;
     padding-bottom: 0.5rem;
   }
 }
