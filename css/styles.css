@@ -65,7 +65,6 @@ article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: min(100%, 50rem);
-  box-shadow: 0 0 25px -1px #888888;
   border-radius: 1rem;
 }
 
@@ -149,11 +148,9 @@ button {
 /** Footer Styling **/
 
 footer {
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
-  width: 100%;
+  width: 200%;
   text-align: center;
+  margin: 1rem 0;
 }
 
 footer p {
@@ -162,10 +159,10 @@ footer p {
 
 /*********************************** Media Query Mobile ********************************************/
 
-@media (max-width: 377px) {
+@media (max-width: 605px) {
   .single-price-grid {
     grid-template-columns: repeat(1, 1fr);
-    margin: 1rem 1rem 2rem 1rem;
+    margin: 1rem;
     box-shadow: none;
   }
 
@@ -211,26 +208,14 @@ footer p {
   /** Footer Styling **/
 
   footer {
-    position: absolute;
-    left: 0;
-    bottom: -37rem;
-    padding-bottom: 0.5rem;
+    width: 100%;
   }
 }
 
-/*********************************** Media Query *****************************/
+/*********************************** Media Query Tablet/Laptop ********************************************/
 
-@media screen and (min-width: 378px) {
+@media (min-width: 606px) {
   .single-price-grid {
     margin: 1rem;
-  }
-
-  /** Footer Styling **/
-
-  footer {
-    position: absolute;
-    left: 0;
-    bottom: -20rem;
-    padding-bottom: 0.5rem;
   }
 }
