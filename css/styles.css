@@ -149,7 +149,7 @@ button {
 /** Footer Styling **/
 
 footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 3rem;
   width: 100%;
@@ -207,4 +207,12 @@ footer p {
   .article3 {
     border-radius: 0 0 1rem 1rem;
   }
+  
+  /** Footer Styling **/
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 }
