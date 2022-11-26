@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* Base Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 67%, 53%);
+  --light-cyan: hsl(179, 54%, 59%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-size-43px: clamp(0.7rem, calc(0.7rem + 4vw), 2rem);
+  --font-size-16px: clamp(0.4rem, calc(0.3rem + 3vw), 1rem);
+  --body-font: "Karla", sans-serif;
+
+  --font-weight700: 700;
+  --font-weight400: 400;
+
+  --padding-content: 8rem;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--body-font);
+  margin: 0 auto;
+  background-color: var(--light-gray);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: var(--font-size-43px);
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--font-size-16px);
+  font-weight: 400;
+}
+
+article {
+  height: 100%;
+  padding: 2rem;
+}
+
+/** Single Price Grid Styling **/
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.single-price-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: min(100%, 50rem);
+  box-shadow: 0 0 25px -1px #888888;
+  border-radius: 1rem;
+}
+
+/** Article1 Styling **/
+
+.article1 {
+  background-color: var(--white);
+  line-height: 2;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.article1 h1 {
+  font-size: 2rem;
+  color: var(--cyan);
+}
+
+.article1 h2 {
+  font-size: 1.3rem;
+  color: var(--bright-yellow);
+}
+
+.article1 p {
+  color: var(--grayish-blue);
+  max-width: 57ch;
+}
+
+/** Article2 Styling **/
+
+.article2 {
+  background-color: var(--cyan);
+  line-height: 2;
+  border-radius: 0 0 0 1rem;
+}
+
+.article2 h3 {
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.article2 p {
+  color: var(--white);
+  max-width: 50ch;
+}
+
+.article2 span {
+  font-size: small;
+  color: var(--light-gray);
+}
+
+button {
+  border: none;
+  padding: 0.7rem;
+  color: var(--white);
+  background-color: var(--bright-yellow);
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-top: 3rem;
+  font-size: medium;
+  box-shadow: 0 0 20px 0 #888888;
+}
+
+/** Article3 Styling **/
+
+.article3 {
+  background-color: var(--light-cyan);
+  line-height: 2;
+  border-radius: 0 0 1rem 0;
+}
+
+.article3 h4 {
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.article3 p {
+  font-size: 0.8rem;
+  color: var(--light-gray);
+  max-width: 25ch;
+}
+
+/** Footer Styling **/
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  display: inline;
+}
+
+/*********************************** Media Query Mobile ********************************************/
+
+@media (max-width: 605px) {
+  .single-price-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem;
+    box-shadow: none;
+  }
+
+  .single-price-website:first-child {
+    grid-column: 1;
+  }
+
+  .single-price-website:nth-child(2) {
+    grid-row: 2;
+  }
+
+  .single-price-website:last-child {
+    grid-column-start: 1;
+    grid-row: 3;
+  }
+  /** Article1 Styling **/
+
+  .article1 h1 {
+    font-size: 1.3rem;
+  }
+
+  .article1 h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .article1 p {
+    font-size: 0.9rem;
+  }
+
+  /** Article2 Styling **/
+
+  .article2 {
+    border-radius: 0;
+  }
+
+  /** Article3 Styling **/
+
+  .article3 {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
