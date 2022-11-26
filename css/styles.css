@@ -213,6 +213,6 @@ footer p {
 footer {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -5rem;
 }
 }
