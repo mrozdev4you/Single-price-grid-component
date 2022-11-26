@@ -232,7 +232,7 @@ footer {
   footer {
     position: absolute;
     left: 0;
-    bottom: 0.5rem;
+    bottom: 5rem;
     padding-bottom: 0.5rem;
   }
 }
