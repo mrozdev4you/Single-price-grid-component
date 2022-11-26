@@ -162,10 +162,10 @@ footer p {
 
 /*********************************** Media Query Mobile ********************************************/
 
-@media (max-width: 605px) {
+@media (max-width: 377px) {
   .single-price-grid {
     grid-template-columns: repeat(1, 1fr);
-    margin: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
     box-shadow: none;
   }
 
@@ -207,22 +207,20 @@ footer p {
   .article3 {
     border-radius: 0 0 1rem 1rem;
   }
-  
+
   /** Footer Styling **/
 
-footer {
-  position: absolute;
-  left: 0;
-  bottom: -6em;
-  padding-bottom: 0.5rem;
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: -37rem;
+    padding-bottom: 0.5rem;
+  }
 }
-}
 
+/*********************************** Media Query *****************************/
 
-/*********************************** Media Query Tablet/Laptop *****************************/
-
-@media screen and (min-width: 606px) and (max-width: 1550px) {
-  
+@media screen and (min-width: 378px) {
   .single-price-grid {
     margin: 1rem;
   }
@@ -232,7 +230,7 @@ footer {
   footer {
     position: absolute;
     left: 0;
-    bottom: -16rem;
+    bottom: -20rem;
     padding-bottom: 0.5rem;
   }
 }
